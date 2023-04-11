@@ -21,20 +21,119 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
 
+:root {
+  --dark-blue: #1F2937;
+  --white: #F9FAF8;
+  --off-white: #E5E7EB;
+  --blue: #3882F6;
 }
 
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../assets/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Extra Bold';
+  src: url('../assets/Roboto/Roboto-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Light Italic';
+  src: url('../assets/Roboto/Roboto-LightItalic.ttf');
+}
+
+body {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  font-family: 'Roboto Regular';
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+/* COLORS */
+
+header,
+footer,
+.hero {
+  background-color: var(--dark-blue);
+}
+
+.testimonial {
+  background-color: var(--off-white);
+}
+
+button,
+.sign-up {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+h1, h3 {
+  color: var(--white);
+}
+
+a, .hero p, footer {
+  color: var(--off-white);
+}
+
+
+/* FONT SIZES */
+
+
+h1 {
+  font-size: 48px;
+}
+
+h2, blockquote {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Extra Bold';
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+blockquote {
+  font-family: 'Roboto Light Italic';
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+section {
+  padding: 100px;
 }
 
-footer {
+header {
+  display: flex;
+  justify-content: space-between;
 
+  padding: 20px;
+}
+
+header ul {
+  display: flex;
+}
+
+
+footer {
+  height: 50px;
 }
 
 /******************************************
